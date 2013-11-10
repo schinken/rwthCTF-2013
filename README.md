@@ -1,7 +1,7 @@
 # Credits
 
 - smartgrid (discovery=mmisc, script=mmisc)
-- railway (discovery=mmisc, script=schinken, patch=mmisc)
+- railway (discovery=mmisc, script=schinken, patch=mmisc, genpw.pl=mimisc)
 - bank (discovery=mmisc, script=schinken, patch=(krisha,schinken))
 
 - keysubmitter.py (script=schinken)
