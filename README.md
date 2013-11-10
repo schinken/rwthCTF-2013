@@ -11,11 +11,12 @@
 Runner scripts executes exploits on all hosts and store it into a keyfile
 
 All keyfiles are piped into our local keysubmitter server to deduplicate keys so we don't nag the keyserver.
-
+```
   tail -n 300 -f keyfiles/* | nc localhost 8080
-
+```
 The keysubmitter outputs this:
 
+```
   2013-11-09 23:25:49.454430 Submitted key (c49f6897d55e7ee1) from ('127.0.0.1', 45476) :: [Unknown flag.]
   2013-11-09 23:25:49.480109 Submitted key (802aa2ab0ef7541c) from ('127.0.0.1', 45476) :: [Flag validity expired.]
   2013-11-09 23:25:49.584813 Submitted key (6e1be0a35aeaec8e) from ('127.0.0.1', 45476) :: [Unknown flag.]
@@ -26,3 +27,4 @@ The keysubmitter outputs this:
   2013-11-09 23:26:11.225214 Submitted key (f1947e6a79e43dbb) from ('127.0.0.1', 45239) :: [Congratulations, you scored a point!]
   2013-11-09 23:26:11.402758 Submitted key (694d11948c3822ed) from ('127.0.0.1', 45239) :: [Congratulations, you scored a point!]
   2013-11-09 23:26:11.494490 Submitted key (c4cb9c1ef58a45ef) from ('127.0.0.1', 45239) :: [Congratulations, you scored a point!]
+```
